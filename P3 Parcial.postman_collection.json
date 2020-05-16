@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "bc98a56a-7170-4a0b-9b29-02f9cc0a5839",
+		"name": "P3 Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Punto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "dni",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "obra_social",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/parcial/index.php/usuario",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"parcial",
+						"index.php",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/parcial/index.php/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"parcial",
+						"index.php",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "qqq",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "producto",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/parcial/index.php/stock",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"parcial",
+						"index.php",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "qq",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/parcial/index.php/stock",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"parcial",
+						"index.php",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "qww",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_producto",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ususario",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/parcial/index.php/ventas",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"parcial",
+						"index.php",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto 6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "ww",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/parcial/index.php/ventas",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"parcial",
+						"index.php",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
