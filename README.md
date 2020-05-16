@@ -1,0 +1,2 @@
+# modeloParcial
+ sin framework
